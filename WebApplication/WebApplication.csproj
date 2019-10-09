@@ -1,0 +1,91 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Public\dist\**" />
+    <Compile Remove="Public\node_modules\**" />
+    <Compile Remove="Public\out-tsc\**" />
+    <Content Remove="Public\dist\**" />
+    <Content Remove="Public\node_modules\**" />
+    <Content Remove="Public\out-tsc\**" />
+    <EmbeddedResource Remove="Public\dist\**" />
+    <EmbeddedResource Remove="Public\node_modules\**" />
+    <EmbeddedResource Remove="Public\out-tsc\**" />
+    <None Remove="Public\dist\**" />
+    <None Remove="Public\node_modules\**" />
+    <None Remove="Public\out-tsc\**" />
+    <TypeScriptCompile Remove="Public\dist\**" />
+    <TypeScriptCompile Remove="Public\out-tsc\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\favicon.ico" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\main-es2015.js" />
+    <Content Remove="wwwroot\main-es2015.js.map" />
+    <Content Remove="wwwroot\main-es5.js" />
+    <Content Remove="wwwroot\main-es5.js.map" />
+    <Content Remove="wwwroot\polyfills-es2015.js" />
+    <Content Remove="wwwroot\polyfills-es2015.js.map" />
+    <Content Remove="wwwroot\polyfills-es5.js" />
+    <Content Remove="wwwroot\polyfills-es5.js.map" />
+    <Content Remove="wwwroot\runtime-es2015.js" />
+    <Content Remove="wwwroot\runtime-es2015.js.map" />
+    <Content Remove="wwwroot\runtime-es5.js" />
+    <Content Remove="wwwroot\runtime-es5.js.map" />
+    <Content Remove="wwwroot\styles-es2015.js" />
+    <Content Remove="wwwroot\styles-es2015.js.map" />
+    <Content Remove="wwwroot\styles-es5.js" />
+    <Content Remove="wwwroot\styles-es5.js.map" />
+    <Content Remove="wwwroot\vendor-es2015.js" />
+    <Content Remove="wwwroot\vendor-es2015.js.map" />
+    <Content Remove="wwwroot\vendor-es5.js" />
+    <Content Remove="wwwroot\vendor-es5.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="2.2.0" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.6.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\..\Program Files (x86)\PostgreSQL\Npgsql\bin\net45\Npgsql.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
